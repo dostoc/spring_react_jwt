@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function AgregarEmpleado() {
     
+
+    // revisar recomendaciones de react-router - uso redirect
     const navegacion = useNavigate();
 
     const[empleado, setEmpleado] = useState(
