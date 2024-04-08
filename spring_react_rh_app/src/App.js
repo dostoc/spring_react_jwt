@@ -4,6 +4,8 @@ import Navegacion from "./plantilla/Navegacion";
 import AgregarEmpleado from "./empeados/AgregarEmpleado";
 
 function App() {
+  
+
   return (
     <div className="container text-center">
       <BrowserRouter>

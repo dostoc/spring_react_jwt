@@ -1,0 +1,12 @@
+npm i react-number-format
+npm i axios
+npx create-react-app .
+
+
+
+
+
+insert into `recursos_humanos_db`.`empleado` (`id_empleado`,`departamento`,`nombre`,`salario`) values ('1','Administrativo','Jonatan Postemsky','100.01');
+insert into `recursos_humanos_db`.`empleado` (`id_empleado`,`departamento`,`nombre`,`salario`) values ('2','Administrativo','Mauro','100.01');
+insert into `recursos_humanos_db`.`empleado` (`id_empleado`,`departamento`,`nombre`,`salario`) values ('3','Depocito','Toni','200.01');
+insert into `recursos_humanos_db`.`empleado` (`id_empleado`,`departamento`,`nombre`,`salario`) values ('4','Gerencia','Nestor','1000.48');
