@@ -1,8 +1,11 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { NumericFormat } from 'react-number-format';
+import { Link } from 'react-router-dom';
 
 export default function ListadoEmpleados() {
+
+    
 
     const urlBase = "http://localhost:8080/rh-app/empleados";
 
@@ -34,6 +37,7 @@ export default function ListadoEmpleados() {
                         <th scope="col">Nombre</th>
                         <th scope="col">Departamento</th>
                         <th scope="col">Sueldo</th>
+                        <th scope="col">Editar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -49,6 +53,11 @@ export default function ListadoEmpleados() {
                             displayType={'text'}
                             thousandSeparator=',' prefix={'$'}
                             decimalScale={2} fixedDecimalScale/>
+                        </td>
+                        <td className='text-center'>
+                            <Link to={`/editar/{empleado.idEmpleado}`}
+                            className='btn btn-warning btn-sm me-3'>Editar</Link>
+                            
                         </td>
                     </tr>
                     ))
