@@ -1,6 +1,6 @@
 import Axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useNavigate , useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 
 
@@ -23,10 +23,10 @@ export default function EditarEmpleado() {
 
     useEffect(() => {
         cargarEmpleado();
-    })
+    },[])
 
     const cargarEmpleado = async () => {
-        const resultado = await Axios.get(`${urlBase}/${id}}`)
+        const resultado = await Axios.get(`${urlBase}/${id}`)
         setEmpleado(resultado.data);
     }
 
